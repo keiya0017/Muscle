@@ -1,0 +1,14 @@
+<link href="assets/post.scss" rel="stylesheet" type="text/css">
+
+<h1>Postのindex</h1>
+<p>ここはインデックス</p>
+
+<div class="posts">
+  <% @posts.each do |post| %>
+      <div class="post">
+        <%= post.id %>
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+      </div>
+  <% end %>
+</div>
+<h2>CSS適用できた！</h2>

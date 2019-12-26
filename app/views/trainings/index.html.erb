@@ -1,0 +1,66 @@
+<link href="assets/training.scss" rel="stylesheet" type="text/css">
+<h1>Trainingのindex</h1>
+<p>ここはインデックス</p>
+
+<div class="box-wrapper">
+  <div class="box">
+    <p>Name</p>
+    <div class="posts">
+      <% @user.each do |name| %>
+      <div class="post">
+        <%= name.id %>
+        <%= name.name %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>Menu</p>
+    <div class="posts">
+      <% @all.each do |menu| %>
+      <div class="post">
+        <%= menu.id %>
+        <%= menu.menu %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>Weight</p>
+    <div class="posts">
+      <% @all.each do |weight| %>
+        <div class="post">
+          <%= weight.id %>
+          <%= weight.weight %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>Rep</p>
+    <div class="posts">
+      <% @all.each do |rep| %>
+        <div class="post">
+          <%= rep.id %>
+          <%= rep.rep %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>Set</p>
+    <div class="posts">
+      <% @all.each do |set| %>
+        <div class="post">
+          <%= set.id %>
+          <%= set.set %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

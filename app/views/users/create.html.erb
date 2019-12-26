@@ -1,0 +1,15 @@
+<h1>Userのsignup</h1>
+<p>ここはサインアップ</p>
+<%= form_tag("/users/signup",method: :post)  do %>
+<div class="form">
+  <h3>signup</h3>
+  <input type="text" name="name" value="name">
+  <br>
+  <input type="string" name="email" value="email">
+  <br>
+  <input type="string" name="password" value="password">
+  <br>
+
+  <input type="submit" value="新規登録">
+</div>
+<% end %>

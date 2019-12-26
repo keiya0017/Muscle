@@ -1,0 +1,8 @@
+<h1>ここはshow<%= @post.id %>です</h1>
+<%= @post.content %>
+<br>
+<%= @post.created_at %>
+<br>
+<div class="destroy">
+  <%= link_to("削除する","/posts/#{@post.id}/destroy",{method:"post"}) %>
+</div>

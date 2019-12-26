@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <title>Muscle</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="nav">
+      <ul>
+        <li><%= link_to("Muscle", "/") %></li>
+        <li><%= link_to("Muscleとは", "/about") %></li>
+
+        <li><%= link_to("投稿一覧", "/trainings/index") %></li>
+        <li><%= link_to("投稿してみる", "/trainings/new") %></li>
+        <li><%= link_to("ユーザ一覧", "/users/index") %></li>
+        <li><%= link_to("新規登録", "/users/create") %></li>
+      </ul>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

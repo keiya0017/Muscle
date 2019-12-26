@@ -1,0 +1,12 @@
+<link href="assets/user.scss" rel="stylesheet" type="text/css">
+<h1>Userのindex</h1>
+<p>ここはインデックス</p>
+
+<div class="users">
+  <% @users.each do |user| %>
+      <div class="user">
+        <%= user.id %>
+        <%= user.name %>
+      </div>
+  <% end %>
+</div>

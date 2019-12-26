@@ -1,0 +1,20 @@
+<h1>ここはshow<%= @all.id %>です</h1>
+<div class="section">
+  <p>Menu:<%= @all.menu %></p>
+</div>
+<div class="section">
+  <p>Weight:<%= @all.weight %></p>
+</div>
+<div class="section">
+  <p>Rep:<%= @all.rep %></p>
+</div>
+<div class="section">
+  <p>Set:<%= @all.set %></p>
+</div>
+<div class="section">
+  <p>Posted at:<%= @all.created_at %></p>
+</div>
+
+<div class="destroy">
+  <%= link_to("削除する","/trainings/#{@all.id}/destroy",{method:"post"}) %>
+</div>

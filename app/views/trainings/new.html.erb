@@ -1,0 +1,17 @@
+<h1>Trainingのnew</h1>
+<p>ここは投稿画面にする</p>
+<%= form_tag("/trainings/add",method: :post)  do %>
+<div class="form">
+  <h3>name</h3>
+  <input type="text" name="name" value="ここにニックネームを入力">
+</div>
+
+<div class="form">
+  <h3>training</h3>
+  <input type="text" name="menu" value="ここにメニューを入力">
+  <input type="string" name="weight" value="ここに重量を入力">
+  <input type="string" name="rep" value="ここにレップ数を入力">
+  <input type="string" name="set" value="ここにセット数を入力">
+  <input type="submit" value="追加">
+</div>
+<% end %>

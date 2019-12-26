@@ -1,0 +1,10 @@
+<h1>Postのnew</h1>
+<p>ここは投稿画面にする</p>
+<p>筋トレの知識を共有しよう！</p>
+
+<%= form_tag("/posts/create") do %>
+<div class="form">
+  <textarea name="content" rows="8" cols="80"></textarea>
+  <input type="submit" value="送信">
+</div>
+<% end %>
